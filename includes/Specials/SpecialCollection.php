@@ -1171,7 +1171,7 @@ class SpecialCollection extends SpecialPage {
 			case 'progress':
 				$out->addHeadItem(
 					'refresh-nojs',
-					'<noscript><meta http-equiv="refresh" content="2" /></noscript>'
+					'<meta http-equiv="refresh" content="2" />'
 				);
 				$out->addInlineScript( 'var collection_id = "' . urlencode( $collectionId ) . '";' );
 				$out->addInlineScript( 'var writer = "' . urlencode( $writer ) . '";' );
